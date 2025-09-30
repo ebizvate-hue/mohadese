@@ -11,9 +11,9 @@
       embedded
       arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
     >
-      <!-- مارکر مربعی -->
-      <a-marker type="pattern" url="marker.patt" id="marker">
-        <!-- ویدیو کاملاً هم‌اندازه مارکر -->
+      <!-- مارکر با ratio = 0.70 -->
+      <a-marker type="pattern" url="marker.patt" patternRatio="0.70" id="marker">
+        <!-- ویدیو دقیقا هم‌اندازه مارکر -->
         <a-video
           id="carVideoEntity"
           src="#carVideo"
@@ -48,5 +48,4 @@
       </script>
     </a-scene>
   </body>
-
 </html>
